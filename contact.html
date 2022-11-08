@@ -758,11 +758,45 @@
                                                                                         <input type="hidden" name="_wpcf7_container_post" value="2545" />
                                                                                         <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
                                                                                     </div>
+                                                                                    <!-- <script src=
+	"https://smtpjs.com/v3/smtp.js">
+</script>
+                                                                                    <script>
+                                                                                        function mailto(params) {
+                                                                                            fullname = document.getElementById('fullname').value
+                                                                                            email = document.getElementById('email').value
+                                                                                            message = document.getElementById('message').value
+                                                                                            
+                                                                                            Email.send({
+                                                                                            Host: "smtp.gmail.com",
+                                                                                            Username: "fakeportfolio@gmail.com",
+                                                                                            Password: "9322065622",
+                                                                                            To: 'ayushete02@gmail.com',
+                                                                                            From: "fakeportfolio@gmail.com",
+                                                                                            Subject: "Contact Mail by "+ email,
+                                                                                            Body: "<h1>Well that was easy!!</h1>",
+                                                                                        })
+                                                                                            .then(function (message) {
+                                                                                            alert("mail sent successfully")
+                                                                                            
+                                                                                            });
+
+                                                                                            
+                                                                                        }
+                                                                                    </script> -->
                                                                                     <div class="qodef-contact-form-standard">
-                                                                                        <div><span class="wpcf7-form-control-wrap" data-name="your-name"><input type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Full name" /></span></div>
-                                                                                        <div><span class="wpcf7-form-control-wrap" data-name="your-email"><input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="E-mail" /></span></div>
-                                                                                        <div><label>Message</label><span class="wpcf7-form-control-wrap" data-name="your-message"><textarea name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span></div>
-                                                                                        <div><button type="submit" class="wpcf7-form-control wpcf7-submit qodef-button qodef-size--normal qodef-layout--outlined qodef-m"><span class="qodef-btn-icon"><svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28" height="18" viewBox="0 0 28 18"  xml:space="preserve"><path d="M27.6,8.5c-5.5,0-9.5-8.1-9.5-8.2C17.9,0,17.7,0,17.5,0.1c-0.2,0.1-0.3,0.4-0.1,0.7c0.1,0.3,2.7,5.5,6.7,7.7H0.4C0.2,8.5,0,8.7,0,9c0,0.3,0.2,0.5,0.4,0.5h23.7c-4,2.2-6.6,7.4-6.7,7.7c-0.1,0.2,0,0.5,0.1,0.7c0.2,0.1,0.4,0.1,0.6-0.2c0-0.1,4.1-8.2,9.5-8.2C27.8,9.5,28,9.3,28,9C28,8.7,27.8,8.5,27.6,8.5z"/><path d="M27.6,8.5c-5.5,0-9.5-8.1-9.5-8.2C17.9,0,17.7,0,17.5,0.1c-0.2,0.1-0.3,0.4-0.1,0.7c0.1,0.3,2.7,5.5,6.7,7.7H0.4C0.2,8.5,0,8.7,0,9c0,0.3,0.2,0.5,0.4,0.5h23.7c-4,2.2-6.6,7.4-6.7,7.7c-0.1,0.2,0,0.5,0.1,0.7c0.2,0.1,0.4,0.1,0.6-0.2c0-0.1,4.1-8.2,9.5-8.2C27.8,9.5,28,9.3,28,9C28,8.7,27.8,8.5,27.6,8.5z"/></svg></span><span class="qodef-m-text">Submit</span></button></div>
+                                                                                        <div><span class="wpcf7-form-control-wrap" data-name="your-name"><input id="fullname" type="text" name="your-name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Full name" /></span></div>
+                                                                                        <div><span class="wpcf7-form-control-wrap" data-name="your-email"><input type="email" id="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="E-mail" /></span></div>
+                                                                                        <div><label>Message</label><span class="wpcf7-form-control-wrap" data-name="your-message"><textarea id="message" name="your-message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea" aria-invalid="false"></textarea></span></div>
+                                                                                        <div>
+                                                                                            <button onclick="mailto()"><span class="qodef-btn-icon">
+                                                                                                <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28" height="18" viewBox="0 0 28 18"  xml:space="preserve">
+                                                                                                    <path d="M27.6,8.5c-5.5,0-9.5-8.1-9.5-8.2C17.9,0,17.7,0,17.5,0.1c-0.2,0.1-0.3,0.4-0.1,0.7c0.1,0.3,2.7,5.5,6.7,7.7H0.4C0.2,8.5,0,8.7,0,9c0,0.3,0.2,0.5,0.4,0.5h23.7c-4,2.2-6.6,7.4-6.7,7.7c-0.1,0.2,0,0.5,0.1,0.7c0.2,0.1,0.4,0.1,0.6-0.2c0-0.1,4.1-8.2,9.5-8.2C27.8,9.5,28,9.3,28,9C28,8.7,27.8,8.5,27.6,8.5z"/><path d="M27.6,8.5c-5.5,0-9.5-8.1-9.5-8.2C17.9,0,17.7,0,17.5,0.1c-0.2,0.1-0.3,0.4-0.1,0.7c0.1,0.3,2.7,5.5,6.7,7.7H0.4C0.2,8.5,0,8.7,0,9c0,0.3,0.2,0.5,0.4,0.5h23.7c-4,2.2-6.6,7.4-6.7,7.7c-0.1,0.2,0,0.5,0.1,0.7c0.2,0.1,0.4,0.1,0.6-0.2c0-0.1,4.1-8.2,9.5-8.2C27.8,9.5,28,9.3,28,9C28,8.7,27.8,8.5,27.6,8.5z"/></svg></span><span class="qodef-m-text">Submit</span></button>
+                                                                                          
+                                                                                            <!-- <button onclick="mailto()" type="button" class="wpcf7-form-control wpcf7-submit qodef-button qodef-size--normal qodef-layout--outlined qodef-m">
+                                                                                                <span class="qodef-btn-icon">
+                                                                                                    <svg  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="28" height="18" viewBox="0 0 28 18"  xml:space="preserve">
+                                                                                                        <path d="M27.6,8.5c-5.5,0-9.5-8.1-9.5-8.2C17.9,0,17.7,0,17.5,0.1c-0.2,0.1-0.3,0.4-0.1,0.7c0.1,0.3,2.7,5.5,6.7,7.7H0.4C0.2,8.5,0,8.7,0,9c0,0.3,0.2,0.5,0.4,0.5h23.7c-4,2.2-6.6,7.4-6.7,7.7c-0.1,0.2,0,0.5,0.1,0.7c0.2,0.1,0.4,0.1,0.6-0.2c0-0.1,4.1-8.2,9.5-8.2C27.8,9.5,28,9.3,28,9C28,8.7,27.8,8.5,27.6,8.5z"/><path d="M27.6,8.5c-5.5,0-9.5-8.1-9.5-8.2C17.9,0,17.7,0,17.5,0.1c-0.2,0.1-0.3,0.4-0.1,0.7c0.1,0.3,2.7,5.5,6.7,7.7H0.4C0.2,8.5,0,8.7,0,9c0,0.3,0.2,0.5,0.4,0.5h23.7c-4,2.2-6.6,7.4-6.7,7.7c-0.1,0.2,0,0.5,0.1,0.7c0.2,0.1,0.4,0.1,0.6-0.2c0-0.1,4.1-8.2,9.5-8.2C27.8,9.5,28,9.3,28,9C28,8.7,27.8,8.5,27.6,8.5z"/></svg></span><span class="qodef-m-text">Submit</span></button></div> -->
                                                                                     </div>
                                                                                     <div class="wpcf7-response-output" aria-hidden="true"></div>
                                                                                 </form>
